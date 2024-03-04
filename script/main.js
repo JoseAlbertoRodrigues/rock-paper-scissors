@@ -5,7 +5,6 @@ function getComputerChoice() {
     let rps = ['Rock', 'Paper', 'Scissors']
     let word_random = rps[Math.floor(Math.random() * rps.length)].toLowerCase()
 
-    // console.log('função get computer ' + palavra_aleatoria)
     return word_random
 }
 
@@ -14,7 +13,7 @@ function playGame() {
     for(let i = 0; i < 5; i++) {
         console.log(`RODADA: ${i+1}`)
         // const playerSelection = "scissors";
-        const playerSelection = prompt('Make a choise:');
+        const playerSelection = prompt('Make a choise: ');
         const computerSelection = getComputerChoice();
 
         console.log(playRound(playerSelection, computerSelection));
@@ -32,7 +31,6 @@ function playGame() {
                     console.log(`player Selection => ${playerSelection}`)
                     console.log(`computer Selection => ${computerSelection}`)
                     playerPoint++
-                    // console.log(`PONTUAÇAÕ DO JOGADOR: ${playerPoint}`)
                     console.log('PLAYER WIN ROUND!')
 
 
