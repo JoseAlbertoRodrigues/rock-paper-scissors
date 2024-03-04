@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação e eventos de DOM</title>
+
+    <script src="./exercicioTheOdinJS.js" defer></script>
+</head>
+<body>
+    <!-- https://www.theodinproject.com/lessons/foundations-dom-manipulation-and-events -->
+
+
+    <button onclick="alert('hello World!')">Click Me First exemple</button>
+    <!-- Esta solução não é ideal porque estamos sobrecarregando nosso HTML com JavaScript. Além disso, só podemos definir uma propriedade “onclick” por elemento DOM, portanto, não podemos executar várias funções separadas em resposta a um evento de clique usando este método. -->
+
+
+    <button id="btn">Click Me Second exemple</button>
+    <!-- Isto é um pouco melhor. Movemos o JS do HTML para um arquivo JS, mas ainda temos o problema de que um elemento DOM pode ter apenas 1 propriedade “onclick”. -->
+
+    <button id="button">Click Me Too Third exemple</button>
+    <!-- Agora, mantemos a separação de interesses e também permitimos vários ouvintes de eventos, se necessário. O Método 3 é muito mais flexível e poderoso, embora seja um pouco mais complexo de configurar. -->
+
+
+    <div id="container">
+        <button id="one">Click Me</button>
+        <button id="two">Click Me</button>
+        <button id="three">Click Me</button>
+    </div>
+</body>
+</html>
